@@ -51,6 +51,7 @@ const Conta = () => {
                         <>
                             <CardInfo mainContent={`Bem vinda ${userData?.name}`} content={`${actualData.getDay()} / ${actualData.getMonth()} / ${actualData.getFullYear()} ${actualData.getHours()}:${actualData.getMinutes()}`} />
                             <CardInfo mainContent='Saldo' content={`R$ ${userData.balance}`}/>
+                            <CardInfo mainContent='Email' content={`${userData?.email}`}/>
                         </>
                     )
                 }
